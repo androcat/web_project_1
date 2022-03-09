@@ -21,7 +21,7 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .logo {
@@ -33,6 +33,7 @@
   list-style: none;
   padding-left: 0;
   margin-top: 8px;
+  margin-bottom: 0;
   display: flex;
   align-items: center;
   column-gap: 20px;
@@ -54,6 +55,8 @@
   font-weight: 500;
   margin: 150px 0 0;
   max-width: 544px;
+  position: relative;
+  z-index: 2;
 }
 
 .header__description {
@@ -61,6 +64,8 @@
   line-height: 30px;
   margin: 32px 0 0;
   max-width: 465px;
+  position: relative;
+  z-index: 2;
 }
 
 .header__image {
@@ -128,7 +133,6 @@
   list-style-type: none;
   padding: 0;
 }
-
 
 .card {
   background-color: #fff;
@@ -211,6 +215,7 @@
   background-position: center;
   margin-right: 12px;
 }
+
 .event-info__icon_type_calendar {
   background-image: url(../images/icon_calendar.svg);
   height: 24px;
@@ -393,6 +398,10 @@
   margin-bottom: 32px;
 }
 
+.about__paragraph:last-of-type {
+  margin-bottom: 0;
+}
+
 .about__circle {
   background-color: #2f80ed;
   width: 495px;
@@ -413,7 +422,7 @@
 .footer__columns {
   display: flex;
   justify-content: space-between;
-  
+
   flex-wrap: wrap;
 }
 
@@ -445,7 +454,12 @@
   padding-bottom: 16px;
 }
 
+.footer__list-item:last-of-type {
+  padding-bottom: 0;
+}
+
 .footer__column-heading {
+  margin-top: 0;
   margin-bottom: 20px;
 }
 
@@ -466,5 +480,5 @@
 }
 
 .footer__copyright {
-  align-items: flex-start;
+  margin: 0 0 0;
 }
